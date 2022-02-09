@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="search">search</string>
+    <string name="helper_text">helper</string>
+    <string name="clever_words">какие-то умные письмена</string>
+    <string name="history_news">Как появилась станция Дуга вблизи Чернобыля, самый загадочный объект времён СССР. Про неё сложили мифы, но правда намного проще</string>
+</resources>
