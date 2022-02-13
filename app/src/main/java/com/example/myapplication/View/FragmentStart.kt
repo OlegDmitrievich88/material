@@ -1,5 +1,7 @@
 package com.example.myapplication.View
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
@@ -14,6 +16,8 @@ import com.example.myapplication.ViewModel.ViewModelPictureFragment
 import com.google.android.material.bottomappbar.BottomAppBar
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import kotlinx.android.synthetic.main.bottom_sheet_layout.*
+import kotlinx.android.synthetic.main.fragment_start.*
 
 class FragmentStart: Fragment() {
 
@@ -46,11 +50,31 @@ class FragmentStart: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setBottomSheetBehavior(view.findViewById(R.id.bottom_sheet_container))
-       // setBottomAppBar(view)
+        setBottomAppBar(view)
+
+        input_layout.setEndIconOnClickListener {
+            startActivity(Intent(Intent.ACTION_VIEW).apply {
+                data = Uri.parse("https://yandex.ru/search/?text=${input_edit_text.text.toString()}")
+            })
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
+    inflater.inflate(R.menu.menu_bottom_bar, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.app_bar_fav-> toast("Hello")
+            android.R.id.home->{
+                activity?.let {
+                    BottomNavigationDrawerFragment().show(it.supportFragmentManager,"tag")
+                }
+            }
+
+        }
+        return super.onOptionsItemSelected(item)
 
     }
 
@@ -73,7 +97,7 @@ class FragmentStart: Fragment() {
                 bar.navigationIcon = null
                 bar.fabAlignmentMode = BottomAppBar.FAB_ALIGNMENT_MODE_END
                 fab.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_baseline_directions_run_24))
-
+                bottom_app_bar.replaceMenu(R.menu.menu_bottom_bar_other_screen)
             }else{
 
                 isMain = true
@@ -81,6 +105,7 @@ class FragmentStart: Fragment() {
                     ContextCompat.getDrawable(context,R.drawable.ic_baseline_accessibility_new_24)
                 bar.fabAlignmentMode = BottomAppBar.FAB_ALIGNMENT_MODE_CENTER
                 fab.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_baseline_accessibility_new_24))
+                bottom_app_bar.replaceMenu(R.menu.menu_bottom_bar)
             }
 
 
@@ -102,10 +127,10 @@ class FragmentStart: Fragment() {
                 if (url.isEmpty()){
                     toast("link is empty")
                 }else{
-
+                    bottom_sheet_description_two.text = data.serverResponseData.explanation
                     img.load(url){
                         lifecycle(this@FragmentStart)
-                        error(R.drawable.ic_launcher_background)
+                        error(R.drawable.nasa)
                         placeholder(R.drawable.ic_launcher_foreground)
                     }
                 }
