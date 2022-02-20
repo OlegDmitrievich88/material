@@ -72,6 +72,12 @@ class FragmentStart: Fragment() {
                     BottomNavigationDrawerFragment().show(it.supportFragmentManager,"tag")
                 }
             }
+            R.id.app_bar_setting ->{
+                requireActivity().supportFragmentManager.beginTransaction()
+                    .replace(R.id.container,SettingFragment.newInstance())
+                    .addToBackStack("")
+                    .commit()
+            }
 
         }
         return super.onOptionsItemSelected(item)

@@ -8,4 +8,9 @@
     <string name="setting">setting</string>
     <string name="one">one</string>
     <string name="two">two</string>
+    <string name="orange_theme">Orange theme</string>
+    <string name="some_theme">Some theme</string>
+    <string name="back">бек то старт</string>
+    <string name="accept">асепт ченж</string>
+    <string name="strange_theme">strange theme</string>
 </resources>

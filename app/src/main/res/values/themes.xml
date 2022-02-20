@@ -13,4 +13,37 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.MyAppCustom" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryOrange</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantOrange</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryOrange</item>
+        <item name="colorSecondary">@color/colorSecondaryOrange</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantOrange</item>
+        <item name="colorOnSecondary">@color/colorOnSecondaryOrange</item>
+        <item name="android:background">@color/colorBacGround</item>
+        <item name="android:statusBarColor">@color/colorPrimaryOrange</item>
+        <item name="textAppearanceButton">@style/AppTextAppearance.Button</item>
+        <item name="shapeAppearanceSmallComponent">@style/AppShapeAppearance.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/AppShapeAppearance.MediumComponent</item>
+    </style>
+
+    <style name="Theme.MyAppCustomTwo" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#c6ff00</item>
+        <item name="colorPrimaryVariant">#fdff58</item>
+        <item name="colorOnPrimary">#90cc00</item>
+        <item name="colorSecondary">#d81b60</item>
+        <item name="colorSecondaryVariant">#ff5c8d</item>
+        <item name="colorOnSecondary">#a00037</item>
+        <item name="android:background">#F6B4B4</item>
+        <item name="android:statusBarColor">#c6ff00</item>
+        <item name="textAppearanceButton">@style/AppTextAppearance.Button</item>
+        <item name="shapeAppearanceSmallComponent">@style/AppShapeAppearance.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/AppShapeAppearance.MediumComponent</item>
+    </style>
+
+
+
+
+
 </resources>
