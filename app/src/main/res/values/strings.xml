@@ -4,4 +4,18 @@
     <string name="helper_text">helper</string>
     <string name="clever_words">какие-то умные письмена</string>
     <string name="history_news">Как появилась станция Дуга вблизи Чернобыля, самый загадочный объект времён СССР. Про неё сложили мифы, но правда намного проще</string>
+    <string name="koffiiiii">koffiiiii</string>
+    <string name="setting">setting</string>
+    <string name="one">one</string>
+    <string name="two">two</string>
+    <string name="orange_theme">Orange theme</string>
+    <string name="some_theme">Some theme</string>
+    <string name="back">бек то старт</string>
+    <string name="accept">асепт ченж</string>
+    <string name="strange_theme">strange theme</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="earth">Earth</string>
+    <string name="planet">planet</string>
+    <string name="some_planet">some planet</string>
 </resources>
