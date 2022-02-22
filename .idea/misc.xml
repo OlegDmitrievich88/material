@@ -3,14 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_earth.xml" value="0.1395" />
+        <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_no_photo_vector.xml" value="0.124" />
+        <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/swipe_indicate_active.xml" value="0.1" />
+        <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/swipe_indicate_inactive.xml" value="0.1" />
+        <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/swipe_indicator_active.xml" value="0.114" />
+        <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/swipe_indicator_inactive.xml" value="0.114" />
+        <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_api_bottom.xml" value="0.2" />
         <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.1897644927536232" />
+        <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main_two.xml" value="0.23177083333333334" />
         <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/layout/bottom_navigation_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/layout/bottom_sheet_layout.xml" value="0.152" />
+        <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_earth.xml" value="0.23177083333333334" />
+        <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_planet.xml" value="0.23177083333333334" />
+        <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_some_picture.xml" value="0.23177083333333334" />
         <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_start.xml" value="0.16" />
         <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/layout/setting_fragment.xml" value="0.152" />
         <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/menu/menu_bottom_bar.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/menu/menu_bottom_bar_other_screen.xml" value="0.136" />
         <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Zver/AndroidStudioProjects/MyApplication/app/src/main/res/menu/menu_bottom_navigation_view.xml" value="0.12407407407407407" />
       </map>
     </option>
   </component>

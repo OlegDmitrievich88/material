@@ -13,4 +13,9 @@
     <string name="back">бек то старт</string>
     <string name="accept">асепт ченж</string>
     <string name="strange_theme">strange theme</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="earth">Earth</string>
+    <string name="planet">planet</string>
+    <string name="some_planet">some planet</string>
 </resources>

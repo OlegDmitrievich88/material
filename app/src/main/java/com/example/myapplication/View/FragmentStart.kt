@@ -13,6 +13,7 @@ import coil.load
 import com.example.myapplication.Model.PictureOfTheDayData
 import com.example.myapplication.R
 import com.example.myapplication.ViewModel.ViewModelPictureFragment
+import com.example.myapplication.ui.ApiBottomActivity
 import com.google.android.material.bottomappbar.BottomAppBar
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -66,7 +67,7 @@ class FragmentStart: Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.app_bar_fav-> toast("Hello")
+            R.id.app_bar_fav-> activity?.let { startActivity(Intent(it,MainActivityTwo::class.java)) }
             android.R.id.home->{
                 activity?.let {
                     BottomNavigationDrawerFragment().show(it.supportFragmentManager,"tag")
@@ -78,6 +79,7 @@ class FragmentStart: Fragment() {
                     .addToBackStack("")
                     .commit()
             }
+            R.id.bottom_navigation -> activity?.let { startActivity(Intent(it,ApiBottomActivity::class.java)) }
 
         }
         return super.onOptionsItemSelected(item)

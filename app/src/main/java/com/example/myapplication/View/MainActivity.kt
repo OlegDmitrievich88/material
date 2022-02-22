@@ -7,6 +7,7 @@ import android.os.Bundle
 import com.example.myapplication.R
 import com.example.myapplication.View.FragmentStart.Companion.newInstance
 
+//https://github.com/OlegDmitrievich88/material/pull/3
 
 private const val THEME_NAME = "theme_name"
 private const val THEME = "theme"
